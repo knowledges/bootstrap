@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Bootstrap 网格系统</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>	
+	<!-- 
+	什么是网格（Grid）
+	网页设计中的网格用于组织内容，让网站易于浏览，并降低用户端的负载。
+	
+	.col-str(*)-num(*):
+		设置列的宽度，
+		str:包含(xs,sm,md,lg)
+		num:包含1~12，数字越大，宽度越大
+	.col-xs-*:
+		屏幕等比例缩放
+	.col-sm-*:
+		当屏幕小于768px,独占一行
+	.col-md-*:
+		当屏幕小于992px,独占一行
+	.col-lg-*:
+		当屏幕小于1200px,独占一行
+
+	demo:http://www.w3cschool.cc/bootstrap/bootstrap-grid-system.html
+	-->
+	<div class="container">
+		<!-- <img src="images/002.jpg" class="img-responsive"alt=""> -->
+		<!-- 网格布局 -->
+		<div class="row">
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+			<div class="col-xs-1" style="background:#ccc; text-align:center; margin:0.2em .2em;">1</div>
+		</div>
+		<!-- 列表排序 -->
+		<!-- 
+			.col-md-*：是不能移位的，当屏幕小于992px,独占一行
+			.col-md-push-*：左移位	0~12 从 0~100%左位移
+			.col-md-pull-*：右移位  0~12 从 0~100%右位移
+		 -->
+		<div class="row">
+		   <p>排序前</p>
+		   <div class="col-md-4" style="background-color: #dedef8;
+		      box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+		      我在左边
+		   </div>
+		   <div class="col-md-8" style="background-color: #dedef8;
+		      box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+		      我在右边
+		   </div>
+		</div><br>
+		<div class="row">
+		   <p>排序后</p>
+		   <div class="col-md-4 col-md-push-8" 
+		      style="background-color: #dedef8;
+		      box-shadow: inset 1px -1px 1px #444, 
+		      inset -1px 1px 1px #444;">
+		      我在左边
+		   </div>
+		   <div class="col-md-8 col-md-pull-4" 
+		      style="background-color: #dedef8;
+		      box-shadow: inset 1px -1px 1px #444, 
+		      inset -1px 1px 1px #444;">
+		      我在右边
+		   </div>
+		</div>   
+
+	</div>
+</body>
+</html>
