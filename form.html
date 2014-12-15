@@ -2,10 +2,130 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width;initial-scale=1.0;">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>Bootstrap 表单</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
 </head>
 <body>
+<div class="container">
+	<!-- 
+		.form-control:对input="text" 进行处理
+		.form-group：当屏幕小于768像素是块元素，大于768是行块级元素
+		.btn :按钮的美化
+		.btn-default:对按钮上色
+		.sr-only，您可以隐藏内联表单的标签。 -->
+	<form class="form-inline" role="form">
+	   <div class="form-group">
+	      <label class="sr-only" for="name">名称</label>
+	      <input type="text" class="form-control" id="name" 
+	         placeholder="请输入名称">
+	   </div>
+	   <div class="form-group">
+	      <label class="sr-only" for="inputfile">文件输入</label>
+	      <input type="file" id="inputfile">
+	   </div>
+	   <div class="checkbox">
+	      <label>
+	      <input type="checkbox"> 请打勾
+	      </label>
+	   </div>
+   		<button type="submit" class="btn btn-default">提交</button>
+	</form>
+
+	<!-- 表单水平 -->
+	<!-- 
+		.col-sm-*:前面已经介绍过，》768PX时执行
+		.form-control 块元素 屏幕小于768时 是行块级元素
+		.col-sm-offset-2 屏幕小于768时 右移
+	 -->
+	<form class="form-horizontal" role="form">
+		<div class="form-group">
+			<label for="firstname" class="col-sm-2 control-label">名字</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="firstname" placeholder="请输入名字">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="lastname" class="col-sm-2 control-label">姓</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="lastname" placeholder="请输入姓">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<div class="checkbox">
+					<label for="">
+						<input type="checkbox"> 请记住我
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-default">登录</button>
+			</div>
+		</div>
+	</form>
+	<!-- 
+	Bootstrap 支持最常见的表单控件，主要是 input、textarea、checkbox、radio 和 select。 -->
+	<form  role="form">
+		<div class="form-group">
+			<label for="">标签</label>
+			<input type="text" class="form-control" placeholder="文本输入">
+		</div>
+	</form>
+
+	<!--  实例 - 复选框和单选按钮 -->
 	
+	<!-- .checkbox、.radio ：块元素 -->
+	<label for="name">默认的复选框和单选按钮的实例</label>
+	<div class="checkbox">
+	   <label><input type="checkbox" value="">选项 1</label>
+	</div>
+	<div class="checkbox">
+	   <label><input type="checkbox" value="">选项 2</label>
+	</div>
+
+	<div class="radio">
+	   <label>
+	      <input type="radio" name="optionsRadios" id="optionsRadios1" 
+	         value="option1" checked> 选项 1
+	   </label>
+	</div>
+	<div class="radio">
+	   <label>
+	      <input type="radio" name="optionsRadios" id="optionsRadios2" 
+	         value="option2">
+	         选项 2 - 选择它将会取消选择选项 1
+	   </label>
+	</div>
+	<!-- .checkbox-inline 将快元素checkbox、radio变成行块元素 -->
+	<label for="name">内联的复选框和单选按钮的实例</label>
+	<div>
+	   <label class="checkbox-inline">
+	      <input type="checkbox" id="inlineCheckbox1" value="option1"> 选项 1
+	   </label>
+	   <label class="checkbox-inline">
+	      <input type="checkbox" id="inlineCheckbox2" value="option2"> 选项 2
+	   </label>
+	   <label class="checkbox-inline">
+	      <input type="checkbox" id="inlineCheckbox3" value="option3"> 选项 3
+	   </label>
+	   <label class="checkbox-inline">
+	      <input type="radio" name="optionsRadiosinline" id="optionsRadios3" 
+	         value="option1" checked> 选项 1
+	   </label>
+	   <label class="checkbox-inline">
+	      <input type="radio" name="optionsRadiosinline" id="optionsRadios4" 
+	         value="option2"> 选项 2
+	   </label>
+	</div>
+
+	<!-- 使用 <select> 展示列表选项，通常是那些用户很熟悉的选择列表，比如州或者数字。
+	使用 multiple="multiple" 允许用户选择多个选项。 -->
+</div>
+
 </body>
 </html>
