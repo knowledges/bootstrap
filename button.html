@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Bootstrap 按钮</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+	<p>
+		.btn :对按钮样式<br/>
+		.btn-default:按钮的颜色（默认色）
+	</p>
+	<!-- 标准的按钮 -->
+	<button type="button" class="btn btn-default">默认按钮</button>
+	<!-- 这会让按钮看起来比较大。 -->
+	<p>
+		.btn-lg:改变按钮的大小（btn-sm、btn-sx、btn-xs、btn-block）
+	</p>
+	<button type="button" class="btn btn-default btn-lg">大的按钮</button>
+	<!-- 这会让按钮看起来比较小。 -->
+	<button type="button" class="btn btn-default btn-sm">小的按钮</button>
+	<!-- 这会让按钮看起来特小。 -->
+	<button type="button" class="btn btn-default btn-xs">特小的按钮</button>
+	<!-- 横跨父元素的全部宽度。 -->
+	<button type="button" class="btn btn-default btn-lg btn-block">特小的按钮</button>
+
+	<p>
+		.btn-primary:按钮的颜色（默认原始色）
+	</p>
+	<!-- 提供额外的视觉效果，标识一组按钮中的原始动作 -->
+	<button type="button" class="btn btn-primary">原始按钮</button>
+
+	<p>
+		.btn-primary:按钮的颜色（成功色）
+	</p>
+	<!-- 表示一个成功的或积极的动作 -->
+	<button type="button" class="btn btn-success">成功按钮</button>
+	<p>
+		.btn-info:按钮的颜色（蓝色）
+	</p>
+	<!-- 信息警告消息的上下文按钮 -->
+	<button type="button" class="btn btn-info">信息按钮</button>
+	<p>
+		.btn-info:按钮的颜色（黄色）
+	</p>
+	<!-- 表示应谨慎采取的动作 -->
+	<button type="button" class="btn btn-warning">警告按钮</button>
+	<p>
+		.btn-info:按钮的颜色（红色）
+	</p>
+	<!-- 表示一个危险的或潜在的负面动作 -->
+	<button type="button" class="btn btn-danger">危险按钮</button>
+
+	<!-- 并不强调是一个按钮，看起来像一个链接，但同时保持按钮的行为 -->
+	<button type="button" class="btn btn-link">链接按钮</button>
+
+
+	<h1>按钮状态</h1>
+	<p>Bootstrap 提供了激活、禁用等按钮状态的 class</p>
+
+	<h2>激活</h2>
+	<!-- 原始按钮 -->
+	<button class="btn btn-default btn-lg">默认按钮</button>
+	<p>
+		.active：按钮激活状态
+	</p>
+	<!-- .active：按钮激活状态 -->
+	<button class="btn btn-default btn-lg active">激活按钮</button>
+	<button class="btn btn-primary btn-lg active">激活按钮</button>
+	
+	<h2>禁用</h2>
+	<p>当您禁用一个按钮时，它的颜色会变淡 50%，并失去渐变</p>
+	<!-- 原始按钮 -->
+	<button class="btn btn-default btn-lg">默认按钮</button>
+	<p>
+		disabled：禁止鼠标按钮事件
+	</p>
+	<button class="btn btn-default btn-lg" disabled>禁用按钮</button>
+	<p>
+	</p>
+	<a href="" class="btn btn-default btn-lg"  role="button">链接</a>
+	<p>
+		.disabled：禁止鼠标按钮事件
+	</p>
+	<a href="" class="btn btn-default btn-lg disabled" role="button">禁止链接</a>
+</div>
+</body>
+</html>
