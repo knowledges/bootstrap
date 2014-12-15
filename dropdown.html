@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Bootstrap 下拉菜单（Dropdowns）</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<p>
+		通过 data 属性：向链接或按钮添加 data-toggle="dropdown" 来切换下拉菜单
+		aria-expanded :false 隐藏(默认)
+						true 显示
+
+	</p>
+	<!-- 如需使用下列菜单，只需要在 class .dropdown 内加上下拉菜单即可。下面的实例演示了基本的下拉菜单： -->
+	<div class="dropdown">
+		<button type="button" class="btn dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown">
+			主题
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu"  aria-labelledby="dropdownMenu1">
+
+			<!-- dropdown-header 是个下拉菜单 添加一个头 -->
+			<li role="presentation" class="dropdown-header">我是头</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1">Java</a>
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1">数据挖掘</a>
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1">网络通信</a>
+			</li>
+			<!-- divider 分割线 -->
+			<li role="presentation" class="divider"></li>
+			<!-- dropdown-header 是个下拉菜单 添加一个头 -->
+			<li role="presentation" class="dropdown-header">我是头</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1">分离的链接</a>				
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
