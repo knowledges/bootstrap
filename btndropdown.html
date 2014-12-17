@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Bootstrap 按钮下拉菜单</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				默认<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="">功能</a></li>
+				<li><a href="">另一个功能</a></li>
+				<li><a href="">其他</a></li>
+				<li class="divider"></li>
+				<li><a href="">分离的链接</a></li>
+			</ul>
+		</div>
+		<div class="btn-group">
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				原始<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="">功能</a></li>
+				<li><a href="">另一个功能</a></li>
+				<li><a href="">其他</a></li>
+				<li class="divider"></li>
+				<li><a href="">分离的链接</a></li>
+			</ul>
+		</div>
+		
+		<div class="btn-group">
+			<button class="btn btn-default">默认</button>
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				<span class="caret"></span>
+				<span class="sr-only">切换下拉菜单</span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">功能</a></li>
+				<li><a href="#">另一个功能</a></li>
+				<li><a href="#">其他</a></li>
+				<li class="divider"></li>
+				<li><a href="#">分离的链接</a></li>
+			</ul>
+		</div>
+		
+		<div class="btn-group">
+			<button class="btn btn-primary">原始</button>
+			<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				<span class="caret"></span>
+				<span class="sr-only">切换下拉菜单</span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- 菜单也可以往上拉伸的，只需要简单地向父 .btn-group 容器添加 .dropup 即可。 -->
+		<div class="row" style="margin-left:50px; margin-top:200px">
+		   <div class="btn-group dropup">
+		      <button type="button" class="btn btn-default dropdown-toggle" 
+		         data-toggle="dropdown">
+		         默认 <span class="caret"></span>
+		      </button>
+		      <ul class="dropdown-menu" role="menu">
+		         <li><a href="#">功能</a></li>
+		         <li><a href="#">另一个功能</a></li>
+		         <li><a href="#">其他</a></li>
+		         <li class="divider"></li>
+		         <li><a href="#">分离的链接</a></li>
+		      </ul>
+		   </div>
+		   <div class="btn-group dropup">
+		      <button type="button" class="btn btn-primary dropdown-toggle" 
+		         data-toggle="dropdown">
+		         原始 <span class="caret"></span>
+		      </button>
+		      <ul class="dropdown-menu" role="menu">
+		         <li><a href="#">功能</a></li>
+		         <li><a href="#">另一个功能</a></li>
+		         <li><a href="#">其他</a></li>
+		         <li class="divider"></li>
+		         <li><a href="#">分离的链接</a></li>
+		      </ul>
+		   </div>
+		</div>
+		<p>菜单也可以往上拉伸的，只需要简单地向父 .btn-group 容器添加 .dropup 即可</p>
+	</div>
+</body>
+</html>
