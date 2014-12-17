@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Bootstrap 输入框组</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<!-- 
+	.input-group-addon 放置额外的内容。
+	-->
+	<div class="container" style="margin-top:10px;">
+		<p>支持IE8+</p>
+		<form action="" class="bs-example bs-example-form" role="form">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="string">
+				<span class="input-group-addon">@163.com</span>
+			</div>
+		</form>
+	</div>
+
+	<!-- 输入框的大小 -->
+	<!-- 您可以通过向 .input-group 添加相对表单大小的 class（比如 .input-group-lg、input-group-sm、input-group-xs）来改变输入框组的大小。输入框中的内容会自动调整大小。 -->
+	<div class="container">
+		<p>支持IE8+</p>
+		<p>您可以通过向 .input-group 添加相对表单大小的 class（比如 .input-group-lg、input-group-sm、input-group-xs）来改变输入框组的大小。输入框中的内容会自动调整大小。</p>
+		<form action="" class="bs-example bs-example-form" role="form">
+			<div class="input-group input-group-lg">
+				<input type="text" class="form-control" placeholder=".input-group-lg">				
+				<span class="input-group-addon">@163.com</span>
+			</div>
+			<div class="input-group input-group-sm">
+				<input type="text" class="form-control" placeholder=".input-group-sm">				
+				<span class="input-group-addon">@163.com</span>
+			</div>
+			<div class="input-group input-group-sx">
+				<input type="text" class="form-control" placeholder=".input-group-xs">				
+				<span class="input-group-addon">@163.com</span>
+			</div>
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="string">				
+				<span class="input-group-addon">@163.com</span>
+			</div>
+		</form>
+	</div>
+
+	<!-- 按钮插件 -->
+	<!--input-group-addon 不能包裹按钮
+		input-group-btn 包裹按钮 -->
+	<div class="container" style="margin-top:30px;">
+		<form action="" class="bs-exapmle bs-exapmle-form" role="role">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control">
+						<span class="input-group-btn">
+							<button class="btn btn-default">Go!</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- 带有下拉菜单的按钮 -->
+	<div class="container">
+		<form action="" class="bs-exapmle bs-exapmle-form" role="form">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control">
+						<span class="input-group-btn">
+							<button class="btn btn-default">GO! </button>
+							<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							<span class="caret"></span>
+							<span class="sr-only"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">功能</a></li>
+								<li><a href="#">另一个功能</a></li>
+								<li><a href="#">其他</a></li>
+								<li class="divider"></li>
+								<li><a href="#">分离的链接</a></li>
+							</ul>
+						</span>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
