@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Bootstrap 导航栏</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<!--向 <nav> 标签添加 class .navbar、.navbar-default。
+		向上面的元素添加 role="navigation"，有助于增加可访问性。
+		向 <div> 元素添加一个标题 class .navbar-header，内部包含了带有 class navbar-brand 的 <a> 元素。这会让文本看起来更大一号。
+		为了向导航栏添加链接，只需要简单地添加带有 class .nav、.navbar-nav 的无序列表即可。 -->
+	<div class="container">
+		<p>
+			向<code>&lt;nav&gt;</code>标签添加 class .navbar、.navbar-default。<br/>
+			向上面的元素添加 role="navigation"，有助于增加可访问性。<br/>
+			向<code>&lt;div&gt;</code> 元素添加一个标题 class .navbar-header，内部包含了带有 class navbar-brand 的<code>&lt;a&gt;</code>元素。这会让文本看起来更大一号。<br/>
+			为了向导航栏添加链接，只需要简单地添加带有 class .nav、.navbar-nav 的无序列表即可。<br/>
+		</p>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<a href="" class="navbar-brand">W3Cschool</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">iOS</a></li>
+     			<li><a href="#">SVN</a></li>
+				<li class="dropdown">
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">
+						Java
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">jmeter</a></li>
+						<li><a href="#">EJB</a></li>
+						<li><a href="#">Jasper Report</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离的链接</a></li>
+						<li class="divider"></li>
+						<li><a href="#">另一个分离的链接</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- 响应式的导航栏 -->
+	<div class="container">
+		<p>
+			<h1>响应式的导航栏</h1>
+			为了给导航栏添加响应式特性，您要折叠的内容必须包裹在带有 classes .collapse、.navbar-collapse 的<code> &lt;div&gt;</code>中。折叠起来的导航栏实际上是一个带有 class .navbar-toggle 及两个 data- 元素的按钮。第一个是 data-toggle，用于告诉 JavaScript 需要对按钮做什么，第二个是 data-target，指示要切换到哪一个元素。三个带有 class .icon-bar 的 <code>&lt;span&gt;</code>创建所谓的汉堡按钮。这些会切换为 .nav-collapse<code> &lt;div&gt;</code> 中的元素
+		</p>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse"  data-target="#example-navbar-collapse">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="" class="navbar-brand">W3Cschool</a>
+		</div>
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">iOS</a></li>
+         		<li><a href="#">SVN</a></li>
+				<li class="dropdown">
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">
+						JAVA 
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="role">
+						<li><a href="#">jmeter</a></li>
+						<li><a href="#">EJB</a></li>
+						<li><a href="#">Jasper Report</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离的链接</a></li>
+						<li class="divider"></li>
+						<li><a href="#">另一个分离的链接</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<h2>Bootstrap 实例 - 倒置的导航栏</h2>
+	<nav class="navbar navbar-inverse" role="navigation">
+	   <div class="navbar-header">
+	   		<button class="navbar-toggle" data-toggle="collapse"  data-target="#example-navbar-collapse">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+	      <a class="navbar-brand" href="#">W3Cschool</a>
+	   </div>
+	   <div>
+	      <ul class="nav navbar-nav">
+	         <li class="active"><a href="#">iOS</a></li>
+	         <li><a href="#">SVN</a></li>
+	         <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	               Java <b class="caret"></b>
+	            </a>
+	            <ul class="dropdown-menu">
+	               <li><a href="#">jmeter</a></li>
+	               <li><a href="#">EJB</a></li>
+	               <li><a href="#">Jasper Report</a></li>
+	               <li class="divider"></li>
+	               <li><a href="#">分离的链接</a></li>
+	               <li class="divider"></li>
+	               <li><a href="#">另一个分离的链接</a></li>
+	            </ul>
+	         </li>
+	      </ul>
+	   </div>
+	   <div>
+	   	<form action="" class="navbar-form navbar-left">
+	   		<div class="form-group">
+	   			<input type="text" class="form-control" placeholder="Search">
+	   		</div>
+	   		<button type="submit" class="btn btn-default">提交</button>
+	   	</form>
+	   </div>
+	</nav>
+</body>
+</html>
