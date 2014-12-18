@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Bootstrap 警告（Alerts）</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<!-- Bootstrap 警告（Alerts） -->
+	<!--  .alert class 和四个上下文 class（即 .alert-success、.alert-info、.alert-warning、.alert-danger）之一，来添加一个基本的警告框。下面的实例演示了这点：  -->
+	<h1>Bootstrap 警告（Alerts）</h1>
+	<div class="alert alert-success">成功！很好地完成了提交。</div>
+	<div class="alert alert-info">信息！请注意这个信息。</div>
+	<div class="alert alert-warning">警告！请不要提交。</div>
+	<div class="alert alert-danger">错误！请进行一些更改。</div>
+
+	<h1>可取消的警告（Dismissal Alerts）</h1>
+	<h3>请确保使用带有 data-dismiss="alert" data 属性的 <code>&lt;button&gt;</code> 元素。</h3>
+	<div class="alert alert-success">
+		<button class="close"data-dismiss="alert" aria-hidden="true"> &times;</button>
+		成功！很好地完成了提交。
+	</div>
+	<div class="alert alert-info">
+		<button class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		信息！请注意这个信息。
+	</div>
+	<div class="alert alert-warning">
+		<button class="close"data-dismiss="alert" aria-hidden="true">&times;</button>
+		警告！请不要提交。
+	</div>
+
+	<h1>警告（Alerts）中的链接</h1>
+	<h3>使用 .alert-link 实体类来快速提供带有匹配颜色的链接。</h3>
+	<!-- 通过创建一个 <div>，并向其添加一个 .alert class 和四个上下文 class（即 .alert-success、.alert-info、.alert-warning、.alert-danger）之一，来添加一个基本的警告框。
+	使用 .alert-link 实体类来快速提供带有匹配颜色的链接。 -->
+	<div class="alert alert-success">
+		<button class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<a href="" class="alert-link">成功！很好地完成了提交。</a>
+	</div>
+	<div class="alert alert-info">
+		信息！请注意这个信息。
+	</div>
+	<div class="alert alert-warning">警告！请不要提交。</div>
+	<div class="alert alert-danger">错误！请进行一些更改。</div>
+</body>
+</html>
