@@ -9,12 +9,38 @@
 	<script src="js/bootstrap.js"></script>
 </head>
 <body>
+	<!-- 向元素 <ul> 添加 class .list-group。向 <li> 添加 class .list-group-item。 -->
+	<h2>向元素<code> &lt;ul&gt; </code>添加 class .list-group。向<code>  &lt;li&gt;</code>  添加 class .list-group-item。</h2>
 	<ul class="list-group">
-		<li class="list-group-item">免费域名注册</li>
+		<li class="list-group-item active">免费域名注册</li>
 		<li class="list-group-item">免费 Window 空间托管</li>
 		<li class="list-group-item">图像的数量</li>
 		<li class="list-group-item">24*7 支持</li>
 		<li class="list-group-item">每年更新成本</li>
 	</ul>
+
+	<a href="#" class="list-group-item active">
+	   免费域名注册
+	</a>
+	<a href="#" class="list-group-item">24*7 支持</a>
+	<a href="#" class="list-group-item">免费 Window 空间托管</a>
+	<a href="#" class="list-group-item">图像的数量</a>
+	<a href="#" class="list-group-item">每年更新成本</a>
+
+	<h4>向列表组添加自定义内容<br/>我们可以向上面已添加链接的列表组添加任意的 HTML 内容。下面的实例演示了这点：</h4>
+	<div class="list-group">
+		<a href="" class="list-group-item active">
+			<h4 class="list-group-item-heading ">免费域名注册</h4>
+		</a>
+		<a href="" class="list-group-item">
+			<h4 class="list-group-item-heading">入门网站包</h4>
+			<p class="list-group-item-test">您将通过网页进行免费域名注册。</p>
+		</a>
+		<a href="" class="list-group-item">
+			<h4 class="list-group-item-heading"> 24*7 支持</h4>
+			<p class="list-group-item-test"> 我们提供 24*7 支持。</p>
+		</a>
+	</div>
+
 </body>
 </html>
