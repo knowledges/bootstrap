@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Bootstrap 面板（Panels）</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h4>创建一个基本的面板，只需要向 <code>&lt;div&gt;</code> 元素添加 class .panel 和 class .panel-default 即可，如下面的实例所示：</h4>
+		<div class="panel panel-default">
+			<div class="panel-body">这是一个基本的面板</div>
+		</div>
+
+		<h3>面板标题</h3>
+		<h4>使用 .panel-heading class 可以很简单地向面板添加标题容器。to easily add a heading container to your panel		</h4>
+		<div class="panel panel-default">
+			<div class="panel-heading"> 不带 title 的面板标题</div>
+			<div class="panel-body">面板内容</div>
+		</div>
+		<h4>使用带有 .panel-title class 的<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> 来添加预定义样式的标题。</h4>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					不带 title 的面板标题
+				</h3>
+			</div>
+			<div class="panel-body">面板内容</div>
+		</div>
+		<h3>面板脚注</h3>
+		<h4>把按钮或者副文本放在带有 class .panel-footer 的<code>&lt;div&gt;</code>中即可</h4>
+		<div class="panel panel-default">
+			<div class="panel-body">这是一个基本的面板</div>
+			<div class="panel-footer">面板脚注</div>
+		</div>
+		<h3>带语境色彩的面板</h3>
+		<h4>使用语境状态类 panel-primary、panel-success、panel-info、panel-warning、panel-danger，来设置带语境色彩的面板</h4>
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title">面板标题</h3>
+			</div>
+			<div class="panel-body">这是一个基本的面板</div>
+		</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">面板标题
+				<button class="close" data-dismiss="alert" aria-hidden="true">&times;</button></h3>
+
+			</div>
+			<div class="panel-body">这是一个基本的面板</div>
+		</div>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">面板标题</h3>
+			</div>
+			<div class="panel-body">这是一个基本的面板</div>
+		</div>
+		<div class="panel panel-warning">
+			<div class="panel-heading">
+				<h3 class="panel-title">面板标题</h3>
+			</div>
+			<div class="panel-body">这是一个基本的面板</div>
+		</div>
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h3 class="panel-title">面板标题</h3>
+			</div>
+			<div class="panel-body">这是一个基本的面板</div>
+		</div>
+	</div>
+</body>
+</html>
